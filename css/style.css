@@ -1,3 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-bottom: 1px #dfe2ed solid;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .header-content .logo img {
+  max-width: 100px;
+  height: auto;
+}
+header .header-content .main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-content .main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .header-content .main-menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+header .header-content .main-menu ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+header .header-content .main-menu ul li a:hover {
+  text-decoration: underline;
+}
+header .header-content .language-switch {
+  background-color: green;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+header .header-content .language-switch:hover {
+  background-color: #d00;
+}
+header .header-content .mobile-menu-toggle {
+  display: none;
+}
+header .header-content .mobile-menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+@media (max-width: 768px) {
+  header .main-menu {
+    display: none;
+  }
+  header .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  header.menu-open .main-menu {
+    display: block;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+  header.menu-open .main-menu ul {
+    text-align: center;
+  }
+  header.menu-open .main-menu ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  header.menu-open .main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  header .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  header .mobile-menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
