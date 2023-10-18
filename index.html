@@ -14,46 +14,36 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <div class="logo">
-          <a href="#"><img src="img/logo.png" alt="Логотип" /></a>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-content">
+          <div class="header__container">
+            <div class="logo">
+              <a class="header__logo" href="#"
+                ><img src="img/logo.png" alt="Логотип"
+              /></a>
+            </div>
+            <div class="header__menu menu">
+              <div class="menu__icon">
+                <span></span>
+              </div>
+              <nav class="main-menu menu__body">
+                <ul class="menu__list">
+                  <li>
+                    <a class="menu__link" href="#"
+                      >Konfigurator <span class="konf">2</span></a
+                    >
+                  </li>
+                  <li><a class="menu__link" href="#">Video-Archiv</a></li>
+                  <li><a class="menu__link" href="#">Kontakt</a></li>
+                </ul>
+                <button class="language-switch">Deutsch</button>
+              </nav>
+            </div>
+          </div>
         </div>
-        <nav class="main-menu">
-          <ul>
-            <li>
-              <a href="#">Konfigurator <span class="konf">2</span></a>
-            </li>
-            <li><a href="#">Video-Archiv</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-          <button class="language-switch"><img src="img/globe.png" width="15" alt="globe"> Deutsch</button>
-        </nav>
-
-        <div class="mobile-menu-toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-    </header>
-
-    <!-- <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="logo">Logo</a>
-          <ul class="nav-links">
-            <li>
-              <a href="#">Konfigurator <span class="konf">2</span></a>
-            </li>
-            <li><a href="#">Video-Archiv</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <button>Deutsch</button>
-          </ul>
-          <i class="fas fa-bars fa-2x" id="burger"></i>
-        </nav>
-      </div>
-    </header> -->
+      </header>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
