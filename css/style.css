@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+body._lock {
+  overflow: hidden;
 }
 
 header {
@@ -43,15 +47,27 @@ header .header-content .main-menu ul li a {
 header .header-content .main-menu ul li a:hover {
   text-decoration: underline;
 }
+header .header-content .main-menu .konf {
+  background-color: red;
+  color: #f1f1f1;
+  padding: 1px 5px;
+  border-radius: 100%;
+  font-size: 14px;
+}
 header .header-content .language-switch {
-  background-color: green;
-  color: #fff;
+  background-color: transparent;
+  color: #1b1b1b;
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
 }
 header .header-content .language-switch:hover {
-  background-color: #d00;
+  background-color: rgb(112, 112, 112);
 }
 header .header-content .mobile-menu-toggle {
   display: none;
