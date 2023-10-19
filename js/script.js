@@ -1,12 +1,9 @@
-import Swiper from 'swiper';
-import 'swiper/css';
-
 
 //burger menu
 const iconMenu = document.querySelector('.menu__icon');
-if(iconMenu) {
+if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
-    iconMenu.addEventListener("click", function(e) {
+    iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
