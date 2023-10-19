@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         watchOverFlow: true,
         spaceBetween: 10,
         centeredSlides: true,
-        initialSlide: 2,
+        initialSlide: 1,
         loop: true,
         loopedSlides: 2,
 
