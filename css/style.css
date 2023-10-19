@@ -67,6 +67,43 @@ header .header-content .language-switch {
 header .header-content .language-switch:hover {
   background-color: rgb(112, 112, 112);
 }
+header .header-content .dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+header .header-content .dropbtn:hover,
+header .header-content .dropbtn:focus {
+  background-color: #2980b9;
+}
+header .header-content .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header .header-content .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .header-content .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header .header-content .dropdown a:hover {
+  background-color: #ddd;
+}
+header .header-content .show {
+  display: block;
+}
 
 @media (min-width: 769px) {
   .header__container {
@@ -501,7 +538,8 @@ footer .button__wrapper .button__item3 a:hover {
   background-color: #3148a3;
 }
 footer .support__btn {
-  position: absolute;
+  position: fixed;
+  z-index: 3;
 }
 
 @media (min-width: 861px) {
@@ -509,7 +547,8 @@ footer .support__btn {
     flex-direction: row;
   }
   footer .support__btn {
-    right: 30px;
+    right: 2%;
+    top: 85%;
   }
 }
 @media (max-width: 860px) {
@@ -517,8 +556,8 @@ footer .support__btn {
     flex-direction: column;
   }
   footer .support__btn {
-    margin-bottom: -100px;
-    right: 5px;
+    right: 2%;
+    top: 85%;
   }
 }
 

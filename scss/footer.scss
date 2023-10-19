@@ -55,7 +55,8 @@ footer {
   }
 
   .support__btn {
-    position: absolute;
+    position: fixed;
+    z-index: 3;
   }
 }
 
@@ -65,7 +66,8 @@ footer {
       flex-direction: row;
     }
     .support__btn {
-      right: 30px;
+      right: 2%;
+      top: 85%;
     }
   }
 }
@@ -76,8 +78,8 @@ footer {
       flex-direction: column;
     }
     .support__btn {
-      margin-bottom: -100px;
-      right: 5px;
+      right: 2%;
+      top: 85%;
     }
   }
 }
