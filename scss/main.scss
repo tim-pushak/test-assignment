@@ -115,34 +115,6 @@ main {
     }
   }
 
-  .slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30%;
-      height: 90%;
-      background: rgba(255, 255, 255, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.2);
-      top: 0;
-      z-index: 3;
-    }
-    &::before {
-      left: -90px;
-    }
-    &::after {
-      right: -80px;
-    }
-    & > * {
-      position: relative;
-      z-index: 2;
-    }
-  }
-
   .image-slider {
     padding: 30px 0 30px 0;
     &.swiper-slide {
@@ -211,6 +183,35 @@ main {
         top: 440px;
       }
     }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 90%;
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.2);
+        top: 0;
+        z-index: 3;
+      }
+      &::before {
+        left: -90px;
+      }
+      &::after {
+        right: -80px;
+      }
+      & > * {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
     .wrapper__left {
       gap: 40px;
     }

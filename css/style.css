@@ -310,32 +310,6 @@ main .block .popup_btn {
   position: absolute;
   z-index: 3;
 }
-main .slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-main .slider::before, main .slider::after {
-  content: "";
-  position: absolute;
-  width: 30%;
-  height: 90%;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.2);
-  top: 0;
-  z-index: 3;
-}
-main .slider::before {
-  left: -90px;
-}
-main .slider::after {
-  right: -80px;
-}
-main .slider > * {
-  position: relative;
-  z-index: 2;
-}
 main .image-slider {
   padding: 30px 0 30px 0;
 }
@@ -392,6 +366,32 @@ main .description__wrapper .description {
   main .block .popup_btn {
     left: 100px;
     top: 440px;
+  }
+  main .slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  main .slider::before, main .slider::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.2);
+    top: 0;
+    z-index: 3;
+  }
+  main .slider::before {
+    left: -90px;
+  }
+  main .slider::after {
+    right: -80px;
+  }
+  main .slider > * {
+    position: relative;
+    z-index: 2;
   }
   main .wrapper__left {
     gap: 40px;
