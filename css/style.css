@@ -68,16 +68,15 @@ header .header-content .language-switch:hover {
   background-color: rgb(112, 112, 112);
 }
 header .header-content .dropbtn {
-  background-color: #3498db;
+  background-color: rgba(250, 250, 250, 0);
   color: white;
-  padding: 16px;
+  padding: 10px 20px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
-header .header-content .dropbtn:hover,
-header .header-content .dropbtn:focus {
-  background-color: #2980b9;
+header .header-content .dropbtn:hover, header .header-content .dropbtn:focus {
+  border: 1px solid #2B6364;
 }
 header .header-content .dropdown {
   position: relative;
@@ -98,7 +97,7 @@ header .header-content .dropdown-content a {
   text-decoration: none;
   display: block;
 }
-header .header-content .dropdown a:hover {
+header .header-content .dropdown-content a:hover {
   background-color: #ddd;
 }
 header .header-content .show {
@@ -212,7 +211,7 @@ header .header-content .show {
   .main-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 130px;
     align-items: center;
   }
   .main-menu .menu__list {
