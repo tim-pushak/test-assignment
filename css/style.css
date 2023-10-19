@@ -54,54 +54,16 @@ header .header-content .main-menu .konf {
 }
 header .header-content .language-switch {
   background-color: transparent;
-  color: #1b1b1b;
   padding: 5px 10px;
   border: none;
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 10px;
   align-items: center;
-  gap: 2px;
 }
-header .header-content .language-switch:hover {
-  background-color: rgb(112, 112, 112);
-}
-header .header-content .dropbtn {
-  background-color: rgba(250, 250, 250, 0);
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-header .header-content .dropbtn:hover, header .header-content .dropbtn:focus {
-  border: 1px solid #2B6364;
-}
-header .header-content .dropdown {
-  position: relative;
-  display: inline-block;
-}
-header .header-content .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-header .header-content .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+header .header-content .language-switch a {
   text-decoration: none;
-  display: block;
-}
-header .header-content .dropdown-content a:hover {
-  background-color: #ddd;
-}
-header .header-content .show {
-  display: block;
 }
 
 @media (min-width: 769px) {
@@ -121,12 +83,19 @@ header .header-content .show {
     list-style: none;
     padding: 0;
     margin: 0;
+    border-right: 1px solid #dfe2ed;
   }
   .main-menu ul li {
     display: inline;
     margin-right: 20px;
   }
   .main-menu ul li .menu__link {
+    color: #1b1b1b;
+  }
+  .main-menu .language-switch {
+    color: #1b1b1b;
+  }
+  .main-menu .language-switch a {
     color: #1b1b1b;
   }
   .konf {
@@ -236,8 +205,12 @@ header .header-content .show {
     align-items: center;
     justify-content: center;
     gap: 13px;
+    color: #fff;
     font-size: 24px;
     color: #fff !important;
+  }
+  .main-menu .language-switch a {
+    color: #fff;
   }
 }
 main h1 {
