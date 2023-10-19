@@ -18,10 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,200;1,400&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="css/swiper.bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -112,7 +113,9 @@
       </div>
       <div class="block">
         <div class="block__body">
-          <div class="popup_btn"><a href=""><img width="70" src="img/btn/popup.png" alt=""></a></div>
+          <div class="popup_btn">
+            <a href=""><img width="70" src="img/btn/popup.png" alt="" /></a>
+          </div>
           <div class="image-slider swiper-container swiper slider">
             <div class="image-slider__wrapper swiper-wrapper">
               <div data-hash="slide-1" class="image-slider__slide swiper-slide">
@@ -137,7 +140,8 @@
               </div>
             </div>
           </div>
-
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
           <div class="swiper-pagination"></div>
         </div>
       </div>

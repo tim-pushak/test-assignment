@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     new Swiper('.image-slider', {
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         slideToClickedSlide: true,
-        hashNavigation:{
+        hashNavigation: {
             watchState: true,
         },
         keyboard: {
